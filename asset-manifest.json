@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-App/static/css/main.1dc175fc.css",
+    "main.js": "/React-App/static/js/main.eeeffc19.js",
+    "static/media/landing.png": "/React-App/static/media/landing.c337f1f297283d51c477.png",
+    "static/media/register.jpg": "/React-App/static/media/register.aded30f1ce0050852686.jpg",
+    "index.html": "/React-App/index.html",
+    "main.1dc175fc.css.map": "/React-App/static/css/main.1dc175fc.css.map",
+    "main.eeeffc19.js.map": "/React-App/static/js/main.eeeffc19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1dc175fc.css",
+    "static/js/main.eeeffc19.js"
+  ]
+}
