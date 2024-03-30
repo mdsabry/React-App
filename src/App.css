@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App-header {
+  height: 50px;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 1000;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 0px 16px;
+}
+
+.logo {
+  text-align: center;
+  vertical-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.actions {
+  line-height: 50px;
+  vertical-align: center;
+}
+
+.landing {
+  position: relative;
+  background-image: url("../public/images/landing.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  height: 100vh;
+}
+
+.MuiPaper-root {
+  color: #333 !important;
+}
+
+.content {
+  position: absolute;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+}
+
+.slogan {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  width: 70%;
+}
+
+.desc {
+  font-size: 1.5rem;
+  margin-top: 50px;
+  font-weight: 400;
+  width: 50%;
+  font-style: italic;
+  color: #777;
+}
+
+.items {
+  padding: 16px;
+  margin-top: 60px;
+  width: 100%;
+  display: grid;
+  row-gap: 20px;
+  column-gap: 60px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+}
+
+.item-card {
+  border: 0.6px solid #ddd !important;
+  max-width: 345px;
+}
+
+.item-card:hover {
+  transform: translate(0px, -10px);
+  transition: all 0.2s;
+}
+
+.item-media {
+  padding: 1em 1em 0 1em;
+  object-fit: contain !important;
+}
+
+.item-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 760px) {
+  .slogan {
+    font-size: 1.5rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .landing {
+    background-size: 50% 50%;
+    background-position: right;
+  }
+
+  .items {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slogan {
+    font-size: 2rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .landing {
+    background-size: contain;
+    background-position: center;
+  }
+
+  .items {
+    grid-template-columns: auto;
+  }
+}
